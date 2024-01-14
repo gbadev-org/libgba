@@ -99,6 +99,9 @@
 #define IWRAM_CODE	__attribute__((section(".iwram.text"), long_call))
 #define EWRAM_CODE	__attribute__((section(".ewram.text"), long_call))
 
+#define ARM_CODE	__attribute__((target("arm")))
+#define THUMB_CODE	__attribute__((target("thumb")))
+
 #define IWRAM_DATA	__attribute__((section(".iwram.data")))
 #define EWRAM_DATA	__attribute__((section(".ewram.data")))
 #define EWRAM_BSS	__attribute__((section(".sbss")))
